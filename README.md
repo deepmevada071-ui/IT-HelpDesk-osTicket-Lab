@@ -1,6 +1,10 @@
 # IT Help Desk Simulation — osTicket
 
-> Self-hosted osTicket help desk on XAMPP. Configured departments, help topics, SLA tiers, and resolved a realistic queue of Tier-1 tickets end-to-end.
+A guide to setting up a local help desk and practicing ticket triage, service-level agreements, escalation, and resolution notes.
+
+**Repository contents:** setup guide and example scenarios. Screenshots and exported lab artifacts have not yet been added; the `screenshots/` folder currently contains a placeholder.
+
+[Setup](#step-by-step-setup) · [Screenshots to add](#screenshots) · [Related projects](#related-projects)
 
 ## Overview
 
@@ -101,7 +105,7 @@ Every IT support job runs on a ticketing system — ServiceNow, Jira, Zendesk, F
 | SEV-B | 4 hours | 24/7 | High (department affected) |
 | SEV-C | 8 hours | Business hours | Normal (single user) |
 
-## Simulated Tickets Resolved
+## Example Ticket Scenarios
 
 | # | Topic | Subject | Priority | SLA | Resolution |
 |---|---|---|---|---|---|
@@ -131,7 +135,7 @@ Each ticket includes:
 - `07-departments.png` — Departments page
 - `08-client-portal.png` — User-facing ticket submission form
 
-## What I Learned
+## Learning Outcomes
 
 - The mechanical difference between **client portal** and **staff control panel** views
 - Why SLA tiers exist and how they drive prioritization at scale
@@ -140,7 +144,7 @@ Each ticket includes:
 - Common PHP extension dependencies (`imap`, `gd`, `mbstring`) and how to enable them in `php.ini`
 - The post-install hardening steps that real shops do (delete `/setup`, re-lock `ost-config.php`)
 
-## Resume Bullet
+## Resume wording (use after completing and verifying the lab)
 
 > Deployed osTicket on a local XAMPP stack; configured departments, help topics, SLA tiers, and agent roles; processed and resolved a queue of 6 simulated Tier-1 tickets covering password resets, network issues, hardware faults, and new-hire onboarding.
 
